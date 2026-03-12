@@ -1,15 +1,50 @@
+import { motion } from "framer-motion";
+
 function Greeting() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    },
+  };
+
   return (
-    <div className="greeting fade-in">
-      <h1>Selamat Hari Raya Idul Fitri 1447 H</h1>
-      <p className="arabic"> تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ</p>
-      <p className="arabic">مِنَ الْعَائِدِين وَالْفَائِزِين</p>
-      <p style={{ fontSize: "1.8rem" }}>Mohon maaf lahir dan batin.</p>
-      <p className="desc" style={{ marginTop: "1rem", fontSize: "1.5rem" }}>
+    <motion.div 
+      className="greeting"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.h1 variants={itemVariants}>
+        Selamat Hari Raya Idul Fitri 1447 H
+      </motion.h1>
+      <motion.p className="arabic" variants={itemVariants}>
+        تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ
+      </motion.p>
+      <motion.p className="arabic" variants={itemVariants}>
+        مِنَ الْعَائِدِين وَالْفَائِزِين
+      </motion.p>
+      <motion.p style={{ fontSize: "1.8rem" }} variants={itemVariants}>
+        Mohon maaf lahir dan batin.
+      </motion.p>
+      <motion.p className="desc" style={{ marginTop: "1rem", fontSize: "1.5rem" }} variants={itemVariants}>
         Semoga di hari yang suci ini, hati kembali bersih, langkah kembali
         ringan, dan kebahagiaan selalu menyertai.
-      </p>
-    </div>
+      </motion.p>
+    </motion.div>
   );
 }
 
