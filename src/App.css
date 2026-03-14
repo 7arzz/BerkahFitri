@@ -167,7 +167,7 @@ body::after {
     #ffffff 80%
   );
   background-size: 200% auto;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* ini bukan error, ini untuk membuat efek shine */
   -webkit-text-fill-color: transparent;
   animation: textShine 8s linear infinite;
   text-shadow: 0 4px 20px rgba(251, 191, 36, 0.2);
