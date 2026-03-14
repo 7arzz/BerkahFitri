@@ -1,6 +1,22 @@
 # 🌙 BerkahFitri
 
-Aplikasi kartu ucapan Selamat Hari Raya Idul Fitri yang dibuat menggunakan **React + Vite**. Dilengkapi dengan animasi indah, efek confetti, dan tombol **"Berbagi Berkah"** yang mengarahkan ke link donasi DANA.
+Website kartu ucapan Selamat Hari Raya Idul Fitri yang dibuat menggunakan **React + Vite**. Dilengkapi dengan animasi indah, efek confetti, dan tombol **"Berbagi Berkah"** yang mengarahkan ke link donasi DANA.
+Yaaa, ini dibuat agar bisa diakses oleh siapa saja, tidak perlu repot-repot print kartu ucapan.
+dan buat yang tidak ada uang cash bisa transfer via dana saja untuk THR nyaaa
+
+
+---
+
+## 📄 License
+
+Source code ini boleh digunakan untuk project pribadi dan hanya untuk hiburan semata pada orang orang tertentu dan sudah kenal akrab dengan kita.
+Tidak diperbolehkan menjual ulang source code tanpa izin developer.
+
+---
+
+## Live demo (link pakai punya developer)
+
+https://berkah-fitri.vercel.app
 
 ---
 
