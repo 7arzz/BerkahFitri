@@ -36,6 +36,7 @@ body {
 
   padding-top: 80px;
   overflow: hidden;
+  width: 100%;
 }
 
 /* 🌌 Ambient Glow Top */
@@ -90,7 +91,7 @@ body::after {
 .container {
   text-align: center;
   padding: 3.5rem 2.5rem;
-  width: 90%;
+  width: 100%;
   max-width: var(--container-width);
   position: relative;
   z-index: 10;
